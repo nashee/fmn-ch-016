@@ -1,5 +1,4 @@
 .service-main {
-    border: 1px solid black;
     margin-bottom: 2rem;
     position: relative;
     z-index: -100;
@@ -8,5 +7,10 @@
     .p-service{
         width: 40%;
         
+    }
+}
+@media (max-width: 700px) {
+    .service-main .p-service {
+        width: 100%;
     }
 }

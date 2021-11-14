@@ -35,8 +35,8 @@ function css(cb){
     .pipe(sass().on('error', sass.logError))
     .pipe(dest("dist/assets/css"))
     cb();
-}  */
-
+}  
+ */
 function cssFA(cb){
     src('src/assets/vendors/fontawesome/font.scss')
     .pipe(sass().on('error', sass.logError))
@@ -111,4 +111,4 @@ function watcher(cb){
 
     cb();
 }
-exports.default = series(clean,img,parallel(html, css,js, cssFA,fas, server), watcher);
+exports.default = series(clean,img,parallel(html, css,js,cssFA,fas, server), watcher);

@@ -1,4 +1,46 @@
-@media (min-width: 700px) {
+.desc {
+    &__heading {
+        color: var(--color-font-bg);
+        font-size: var(--fs-h-2);
+        font-style: normal;
+        font-weight: 300;
+        line-height: 64px;
+        letter-spacing: -0.7142857313156128px;
+        text-align: left;
+        
+    }
+
+    &__paragraph {
+        color: var(--color-font-sm);
+        text-align: left;
+        margin-bottom: var(--margin-bottom-mb);
+         font-size: var(--fs-p-md);
+    }
+}
+.service {
+    &__heading {
+        color: var(--color-font-bg);
+        font-size: var(--fs-h-3);
+        font-style: normal;
+        font-weight: 300;
+        line-height: 28px;
+        letter-spacing: -0.4285714328289032px;
+        text-align: left;
+    }
+    &__paragraph {
+        color: var(--color-font-sm);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: -0.25px;
+        text-align: left;
+        
+
+    }
+}
+
+@media (max-width: 700px) {
 .desc {
     &__heading {
         color: var(--color-font-bg);
@@ -9,13 +51,13 @@
         font-style: normal;
         font-weight: 300;
         line-height: 38px;
-        text-align: left;
+        
 
     }
 
     &__paragraph {
         color: var(--color-font-sm);
-        text-align: left;
+        text-align: center;
         margin-bottom: var(--margin-bottom-mb);
 
     }
@@ -28,12 +70,12 @@
         font-weight: 300;
         line-height: 28px;
         margin-bottom: var(--margin-bottom-mb);
-        text-align: left;
+        text-align: center;
 
     }
     &__paragraph {
         color: var(--color-font-sm);
-        text-align: left;
+        text-align: center;
         margin-bottom: var(--margin-bottom-mb);
 
     }
