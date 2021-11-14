@@ -1,0 +1,56 @@
+:root {
+  // a element fs for desktop
+  --fs-a-1 :1.4rem;
+  //primay heading for desktop
+  --fs-h-1: 5.6rem;
+  //a element for both view port
+  --fs-b: 1.4rem;
+  //big paragraph for  desktop
+  --fs-p-lg: 1.8rem;
+}
+@media (max-width: 700px){
+:root {
+  // a element fs for mobile
+--fs-a-1: 1.8rem;
+// primary heading for mobile
+--fs-h-1: 4rem;
+//button element for both view port
+--fs-b: 1.4rem;
+//big paragraph for  desktop
+--fs-p-lg: 1.5;
+
+
+}
+}
+
+
+
+/*
+
+
+
+
+
+  
+
+
+  big paragraph for  desktop
+  18px;
+
+  big paragpah for mobile
+  15px;
+
+   button text  for  dektop
+  14 px;
+
+ butootn text for mobile
+  14px;
+
+ seconday heading for desktop
+  40px;
+   seconday heading for mobile
+  32px;
+
+ small paragaph for dektop
+  18px;
+  */

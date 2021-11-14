@@ -1,0 +1,27 @@
+.post {
+    &__author {
+
+    }
+
+    &__heading {
+        font-family: inherit;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 28px;
+        margin-bottom: var(--margin-bottom-mb);
+        text-align: left;
+
+    }
+
+    &__paragraph {
+        color: var(--color-font-sm);
+        text-align: left;
+        margin-bottom: var(--margin-bottom-mb);
+      }
+
+    &__image {
+        width: 100%;
+        border-radius: 1rem;
+    }
+}

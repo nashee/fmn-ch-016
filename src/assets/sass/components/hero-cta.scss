@@ -1,0 +1,46 @@
+
+.hero-cta {
+    text-align: left;
+    &__heading {
+    
+    text-align: center;
+    margin-bottom: var(--margin-bottom-big);
+    font-size: var(--fs-h-1);
+    text-align: left;
+    
+    }
+
+    &__paragraph {
+        color: var(--color-font-sm);
+        font-size: var(--fs-p-lg);
+        text-align: left;
+        margin-bottom: var(--margin-bottom-big);
+
+    }
+
+    &__button {
+        display: inline-block;
+        text-align: left;
+    }
+}
+
+@media (max-width: 700px){
+    .hero-cta {
+        text-align: center;
+        &__heading {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        &__paragraph {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+       
+    }
+}
+
+
+
+
+
+ 

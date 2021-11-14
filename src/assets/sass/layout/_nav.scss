@@ -1,0 +1,158 @@
+.nav {
+    max-width: 144rem;
+    height: 6.4rem;  
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+     .logo {
+       
+    }
+
+    .nav .menu-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;   
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        gap: 3rem;
+       .link {
+           color: var(--color-font-sm);
+           font-size: var(--fs-a-1);
+       }
+
+    }
+
+    .nav-button {
+        margin-left: 2rem;
+    }
+
+    
+    
+}
+
+
+
+@media (max-width: 700px){
+
+   .nav .menu-button {
+       display: flex;
+       gap: .7rem;
+       font-size: 2rem;
+       border: 0;
+       background-color: inherit;
+       transition: all .3s;
+       
+   }
+    .nav {
+        .logo {
+            width: 13.9rem;
+            height: 2rem;
+        }
+    }
+
+   .overlay {
+       display: none;
+   }
+
+   .menu-container {
+       
+   }
+
+   .nav .menu ,.nav-button{
+       display: none;
+   }
+
+   .nav.active .menu {
+       display: block;
+       position: absolute;
+       left: 50%;
+       transform: translateX(-50%);
+       top: 8.8rem;
+       background-color: white;
+       z-index: 1000;
+       width: 80%;
+       border-radius: .5rem;
+     
+       .link {
+           font-size : var(--fs-a-1);
+           padding: 1rem;
+           margin: 1rem;
+           display: block;
+           text-align: center;
+       }
+    
+   }
+
+ 
+
+    .overlay-active{
+       display: block;
+       background-image: linear-gradient(rgba(45, 49, 77, 1), rgba(45, 49, 77, 0));
+       position: absolute;
+       top: 50px;
+       bottom: 0;
+       left: 0;
+       right: 0;
+    
+
+   }
+
+   .hero {
+       position: relative;
+       z-index: -1;
+       img {
+           width: 100%;
+       }
+   }
+
+   .icon {
+       width: 2.4rem;
+       border-top: .12rem solid black;
+       display: block;
+       position: relative;
+      
+   }
+
+   .icon::after , .icon::before{
+       content: '';
+       width: 2.4rem;
+       height: .1rem;
+       background-color: currentColor;
+       margin-top: .4rem;
+       display: block;
+       position: relative;
+       transition: 0.3s;
+
+   }
+
+   nav.active  .icon {
+       border-top-color: transparent;
+       
+   }
+
+   nav.active  .icon::after  {
+       
+       top: -0.52rem;
+       transform: rotate(135deg);
+       height: .1rem;
+       
+       
+}
+
+nav.active  .icon::before  {
+   
+    transform: rotate(-135deg);
+    height: .15rem;
+       
+} 
+    
+}
