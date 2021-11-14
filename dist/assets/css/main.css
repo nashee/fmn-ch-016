@@ -277,7 +277,24 @@ a {
     gap: 3rem; }
     .nav .menu .link {
       color: var(--color-font-sm);
-      font-size: var(--fs-a-1); }
+      font-size: var(--fs-a-1);
+      padding: .5rem .4rem;
+      margin-right: .3rem;
+      display: block;
+      text-align: center;
+      position: relative; }
+    .nav .menu .link::after {
+      content: "";
+      position: absolute;
+      height: 0.4rem;
+      background: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+      top: 3.8rem;
+      transition: all;
+      display: block;
+      width: 0;
+      transition-property: width; }
+    .nav .menu .link:hover::after {
+      width: 100%; }
   .nav .nav-button {
     margin-left: 2rem; }
 
@@ -311,7 +328,8 @@ a {
       padding: 1rem;
       margin: 1rem;
       display: block;
-      text-align: center; }
+      text-align: center;
+      position: relative; }
   .overlay-active {
     display: block;
     background-image: linear-gradient(#2d314d, rgba(45, 49, 77, 0));

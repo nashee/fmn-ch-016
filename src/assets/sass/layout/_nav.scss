@@ -6,9 +6,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
-     .logo {
-       
-    }
+    
 
     .nav .menu-container {
         display: flex;
@@ -27,7 +25,34 @@
        .link {
            color: var(--color-font-sm);
            font-size: var(--fs-a-1);
+           padding: .5rem .4rem;
+           margin-right: .3rem;
+           display: block;
+           text-align: center;
+           position: relative;
+          
        }
+
+       .link::after {
+           content: "";
+           
+           position: absolute;
+          
+           height: 0.4rem;
+           background:  linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+           top: 3.8rem;
+           transition: all;
+           display: block;
+           width: 0;
+           transition-property: width;
+        }
+
+       .link:hover::after {
+           width: 100%;
+           
+
+       }
+
 
     }
 
@@ -88,7 +113,12 @@
            margin: 1rem;
            display: block;
            text-align: center;
+           position: relative;
+           
+           
        }
+
+      
     
    }
 
