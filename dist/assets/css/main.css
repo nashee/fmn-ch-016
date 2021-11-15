@@ -265,7 +265,8 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem; }
+  padding: 2rem;
+  background-color: #fff; }
   .nav .nav .menu-container {
     display: flex;
     justify-content: space-between;
@@ -454,6 +455,7 @@ a {
     padding: 2rem; } }
 
 .service-main {
+  background-color: #f4f5f7;
   margin-bottom: 2rem;
   position: relative;
   z-index: -100;
