@@ -1,5 +1,6 @@
 .desc {
     &__heading {
+        
         color: var(--color-font-bg);
         font-size: var(--fs-h-2);
         font-style: normal;
@@ -18,6 +19,7 @@
     }
 }
 .service {
+    
     &__heading {
         color: var(--color-font-bg);
         font-size: var(--fs-h-3);
@@ -35,24 +37,25 @@
         line-height: 26px;
         letter-spacing: -0.25px;
         text-align: left;
-        
 
+    }
+    &__icon {
+        margin-bottom: 4rem;
     }
 }
 
 @media (max-width: 700px) {
 .desc {
+    text-align: center;
     &__heading {
         color: var(--color-font-bg);
-        text-align: center;
         margin-bottom: var(--margin-bottom-mb);
         font-family: inherit;
         font-size: 3.2rem;
         font-style: normal;
         font-weight: 300;
         line-height: 38px;
-        
-
+        text-align: center;
     }
 
     &__paragraph {
@@ -63,6 +66,7 @@
     }
 }
 .service {
+    text-align: center;
     &__heading {
         font-family: inherit;
         font-size: 20px;
@@ -78,6 +82,11 @@
         text-align: center;
         margin-bottom: var(--margin-bottom-mb);
 
+    }
+
+    &__icon {
+        margin-bottom: 2.7rem;
+        
     }
     
 }

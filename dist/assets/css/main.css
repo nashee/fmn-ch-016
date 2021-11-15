@@ -465,18 +465,16 @@ a {
   .service-main .p-service {
     width: 100%; } }
 
-.post-main {
-  border: 1px solid black; }
-  .post-main__heading {
-    color: var(--color-font-bg);
-    text-align: center;
-    margin-bottom: var(--margin-bottom-mb);
-    font-family: inherit;
-    font-size: var(--fs-h-2);
-    font-style: normal;
-    font-weight: 300;
-    line-height: 38px;
-    text-align: left; }
+.post-main__heading {
+  color: var(--color-font-bg);
+  text-align: center;
+  margin-bottom: var(--margin-bottom-mb);
+  font-family: inherit;
+  font-size: var(--fs-h-2);
+  font-style: normal;
+  font-weight: 300;
+  line-height: 38px;
+  text-align: left; }
 
 .post__author {
   color: var(--color-font-sm);
@@ -513,7 +511,9 @@ a {
   padding-bottom: 2.9rem;
   text-align: center; }
   .footer a {
-    color: white; }
+    color: white;
+    padding: 1rem 2rem;
+    display: block; }
   .footer .button-footer {
     padding: 1.6rem 3.8rem;
     border-radius: 3rem;
@@ -525,30 +525,26 @@ a {
 
 @media (min-width: 557px) {
   .flex-footer {
-    border: 1px solid white;
     display: flex;
     flex-direction: column;
     align-items: center; }
     .flex-footer .flex-left {
       align-items: left;
-      flex-basis: 100%;
-      border: 1px solid white; }
+      flex-basis: 100%; }
     .flex-footer .col-2 {
       display: flex;
       margin-bottom: 2rem; }
     .flex-footer .col-1 {
       margin-bottom: 2rem; }
-    .flex-footer .col-2 ul {
-      border: 1px solid white; }
     .flex-footer .col-4 {
       margin-top: 3rem; }
-  .flex-right {
-    border: 1px solid white; }
   .col-2 a {
     padding: .5rem;
     margin-bottom: 0; } }
 
 @media (min-width: 899px) {
+  .social span:not(:last-child) {
+    margin-right: 1.2rem; }
   .flex-footer {
     display: flex;
     flex-direction: row;
@@ -559,10 +555,20 @@ a {
       justify-content: space-between; }
     .flex-footer .col-2 ul {
       margin-right: 5rem; }
+    .flex-footer .footer-logo {
+      margin-bottom: 2rem; }
     .flex-footer .flex-right {
       display: flex;
       flex-basis: 50%;
       justify-content: space-between; } }
+
+@media (max-width: 556px) {
+  .footer-logo {
+    margin-bottom: 2rem; }
+  .social {
+    margin-bottom: 2rem; }
+    .social span:not(:last-child) {
+      margin-right: 1.2rem; } }
 
 .button {
   padding: 1.6rem 3.8rem;
@@ -622,32 +628,41 @@ a {
   letter-spacing: -0.25px;
   text-align: left; }
 
+.service__icon {
+  margin-bottom: 4rem; }
+
 @media (max-width: 700px) {
-  .desc__heading {
-    color: var(--color-font-bg);
-    text-align: center;
-    margin-bottom: var(--margin-bottom-mb);
-    font-family: inherit;
-    font-size: 3.2rem;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 38px; }
-  .desc__paragraph {
-    color: var(--color-font-sm);
-    text-align: center;
-    margin-bottom: var(--margin-bottom-mb); }
-  .service__heading {
-    font-family: inherit;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 28px;
-    margin-bottom: var(--margin-bottom-mb);
+  .desc {
     text-align: center; }
-  .service__paragraph {
-    color: var(--color-font-sm);
-    text-align: center;
-    margin-bottom: var(--margin-bottom-mb); } }
+    .desc__heading {
+      color: var(--color-font-bg);
+      margin-bottom: var(--margin-bottom-mb);
+      font-family: inherit;
+      font-size: 3.2rem;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 38px;
+      text-align: center; }
+    .desc__paragraph {
+      color: var(--color-font-sm);
+      text-align: center;
+      margin-bottom: var(--margin-bottom-mb); }
+  .service {
+    text-align: center; }
+    .service__heading {
+      font-family: inherit;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 28px;
+      margin-bottom: var(--margin-bottom-mb);
+      text-align: center; }
+    .service__paragraph {
+      color: var(--color-font-sm);
+      text-align: center;
+      margin-bottom: var(--margin-bottom-mb); }
+    .service__icon {
+      margin-bottom: 2.7rem; } }
 
 .hero-cta {
   text-align: left; }
