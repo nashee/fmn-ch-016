@@ -392,7 +392,7 @@ a {
 
 .hero-image {
   position: relative;
-  background: url(../../assets/img/image-mockups.png) no-repeat 100px -140px, url(../../assets/img/bg-intro-desktop.svg) no-repeat -50px -300px;
+  background: url(../../assets/img/image-mockups.png) no-repeat 100px -140px, url(../../assets/img/bg-intro-desktop.svg) no-repeat -50px -300px/cover;
   height: 77.2rem; }
 
 @media (max-width: 700px) {
@@ -407,7 +407,7 @@ a {
     position: absolute; }
   .hero-image {
     position: relative;
-    background: url(../../assets/img/image-mockups.png) 0 -90px/90%, url(../../assets/img/bg-intro-mobile.svg) no-repeat 0px -70px;
+    background: url(../../assets/img/image-mockups.png) 0 -90px/90%, url(../../assets/img/bg-intro-mobile.svg) no-repeat 0px -70px/cover;
     height: 27.9rem; } }
 
 @media (min-width: 577px) {
